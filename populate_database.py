@@ -9,7 +9,15 @@ Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-ElementalPizza = Restaurant(name="ElementalPizza")
+elemental_pizza = Restaurant(name="ElementalPizza")
 session.add(myFirstRestaurant)
-session.commit
+session.commit()
+
+margherita_pizza = MenuItem(name="Margherita Pizza"
+							, description="Basic and Delicious!"
+							, course="Entree", price="$15.00" 
+							, restaurant="ElementalPizza")
+
+session.add(margherita_pizza)
+session.commit()
 
