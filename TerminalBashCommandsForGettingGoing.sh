@@ -63,6 +63,7 @@ dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ source activate CTenv
 
 (CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ ls -a
 .  ..  .git  README.md  TerminalBashCommandsForGettingGoing.sh
+
 (CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ conda install flask
 Fetching package metadata .............
 Solving package specifications: .
@@ -102,5 +103,67 @@ werkzeug-0.14. 100% |####################################################| Time:
 setuptools-38. 100% |####################################################| Time: 0:00:00   1.28 MB/s
 jinja2-2.10-py 100% |####################################################| Time: 0:00:00 415.71 kB/s
 flask-0.12.2-p 100% |####################################################| Time: 0:00:00 626.83 kB/s
-(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ 
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ subl
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ git add *
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ git commit -m "init commit for database_setup.py"
+[SettingUp afc7ef3] init commit for database_setup.py
+ 2 files changed, 74 insertions(+)
+ create mode 100644 database_setup.py
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ git status
+On branch SettingUp
+nothing to commit, working directory clean
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ git push -u origin SettingUp
+Username for 'https://github.com': ChadChapman
+Password for 'https://ChadChapman@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.62 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/CodeTacoma/FlaskMenuApplication.git
+ * [new branch]      SettingUp -> SettingUp
+Branch SettingUp set up to track remote branch SettingUp from origin.
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ git add *
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ git commit -m "building out database_setup.py"
+[SettingUp 293c306] building out database_setup.py
+ 1 file changed, 15 insertions(+)
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ git push -u origin SettingUp
+Username for 'https://github.com': ChadChapman
+Password for 'https://ChadChapman@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 462 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/CodeTacoma/FlaskMenuApplication.git
+   afc7ef3..293c306  SettingUp -> SettingUp
+Branch SettingUp set up to track remote branch SettingUp from origin.
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ git commit -a -m "model (database) classes built for Restaurant and MenuItem"
+[SettingUp 26c2e4e] model (database) classes built for Restaurant and MenuItem
+ 1 file changed, 17 insertions(+)
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ git push -u origin SettingUpUsername for 'https://github.com': ChadChapman
+Password for 'https://ChadChapman@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 632 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/CodeTacoma/FlaskMenuApplication.git
+   293c306..26c2e4e  SettingUp -> SettingUp
+Branch SettingUp set up to track remote branch SettingUp from origin.
+
+
+ 
 
