@@ -164,6 +164,60 @@ To https://github.com/CodeTacoma/FlaskMenuApplication.git
    293c306..26c2e4e  SettingUp -> SettingUp
 Branch SettingUp set up to track remote branch SettingUp from origin.
 
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ python3 database_setup.py
+  File "database_setup.py", line 14
+    __tablename__ = 'restaurant'
+                ^
+IndentationError: expected an indented block
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ python3 database_setup.py
+  File "database_setup.py", line 18
+    class MenuItem(Base);
+                        ^
+SyntaxError: invalid syntax
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ python3 database_setup.py
+Traceback (most recent call last):
+  File "database_setup.py", line 2, in <module>
+    from sqlalchemy import Column, ForeignKey, Integer, String
+ModuleNotFoundError: No module named 'sqlalchemy'
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ conda list
+# packages in environment at /home/dave/anaconda3/envs/CTenv:
+#
+ca-certificates           2018.1.18                     0    conda-forge
+certifi                   2018.1.18                py36_0    conda-forge
+click                     6.7                        py_1    conda-forge
+flask                     0.12.2                   py36_0    conda-forge
+itsdangerous              0.24                       py_2    conda-forge
+jinja2                    2.10                     py36_0    conda-forge
+markupsafe                1.0                      py36_0    conda-forge
+ncurses                   5.9                          10    conda-forge
+openssl                   1.0.2n                        0    conda-forge
+pip                       9.0.1                    py36_1    conda-forge
+python                    3.6.4                         0    conda-forge
+readline                  7.0                           0    conda-forge
+setuptools                38.5.1                   py36_0    conda-forge
+sqlite                    3.20.1                        2    conda-forge
+tk                        8.6.7                         0    conda-forge
+werkzeug                  0.14.1                     py_0    conda-forge
+wheel                     0.30.0                   py36_2    conda-forge
+xz                        5.2.3                         0    conda-forge
+zlib                      1.2.11                        0    conda-forge
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ conda install sqlalchemy
+Fetching package metadata .............
+Solving package specifications: .
+
+Package plan for installation in environment /home/dave/anaconda3/envs/CTenv:
+
+The following NEW packages will be INSTALLED:
+
+    sqlalchemy: 1.2.1-py36_0 conda-forge
+
+Proceed ([y]/n)? 
+
+sqlalchemy-1.2 100% |####################################################| Time: 0:00:01   1.06 MB/s
+
+(CTenv) dave@RUPC:~/codeTacoma/FlaskProjects/FlaskMenuApp$ 
 
  
 
