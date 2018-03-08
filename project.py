@@ -28,6 +28,14 @@ def menuItemJSON(restaurant_id, menu_id):
 
 
 @app.route('/')
+@app.route('/restaurants/')
+def index():
+    template = 'You have to specify a restaurant_id!<br><br>'
+    restaurants = session.query(Restaurant).all()
+    for restaurant in restaurants:
+        template += str(restaurant) + '<br>'
+    return template
+
 @app.route('/restaurants/<int:restaurant_id>/menu')
 def restaurantMenu(restaurant_id):
     restaurant = session.query(Restaurant).filter_by(id=restaurant_id).one()
