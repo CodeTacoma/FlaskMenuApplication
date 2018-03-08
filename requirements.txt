@@ -1,0 +1,10 @@
+certifi
+click
+flask
+itsdangerous
+jinja2
+markupsafe
+setuptools
+sqlalchemy
+werkzeug
+wheel
